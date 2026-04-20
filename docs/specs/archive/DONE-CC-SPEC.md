@@ -475,3 +475,14 @@ If rxing-wasm fails to bundle properly despite the next.config.js externals, alt
 1. **`@deviceflow/rxing-wasm`** — fork of rxing-wasm with its own maintenance (same API, 739 downloads/month)
 2. **`@zxing/library`** — the maintenance-mode fallback. Requires manually constructing `RGBLuminanceSource` from sharp-decoded pixel arrays. Functional but awkward.
 3. **Contact Opus for a new library choice** — don't spend >2 hours on library debugging before escalating.
+
+---
+
+## ✅ Completion Record
+
+- **Completed:** 2026-04-13
+- **Final commit:** [commit hash from original buildout]
+- **Vercel deployment:** green
+- **Agents invoked:** architect, backend-agent, review-qa-agent
+- **Smoke tests:** 32 of 32 passing
+- **Notes:** Retired as part of 2026-04-20 housekeeping sweep. Content absorbed into platform CLAUDE.md and repo CLAUDE.md files. Barcode API successfully built and deployed.
