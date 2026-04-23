@@ -36,7 +36,7 @@ function initializeRateLimiters() {
           '1 m'
         ),
         analytics: true,
-        prefix: 'rl:barcode:free',
+        prefix: 'endpnt:ratelimit:barcode:free',
       }),
       starter: new Ratelimit({
         redis: redisInstance,
@@ -45,7 +45,7 @@ function initializeRateLimiters() {
           '1 m'
         ),
         analytics: true,
-        prefix: 'rl:barcode:starter',
+        prefix: 'endpnt:ratelimit:barcode:starter',
       }),
       pro: new Ratelimit({
         redis: redisInstance,
@@ -54,7 +54,7 @@ function initializeRateLimiters() {
           '1 m'
         ),
         analytics: true,
-        prefix: 'rl:barcode:pro',
+        prefix: 'endpnt:ratelimit:barcode:pro',
       }),
       enterprise: new Ratelimit({
         redis: redisInstance,
@@ -63,7 +63,7 @@ function initializeRateLimiters() {
           '1 m'
         ),
         analytics: true,
-        prefix: 'rl:barcode:enterprise',
+        prefix: 'endpnt:ratelimit:barcode:enterprise',
       }),
     }
   }
